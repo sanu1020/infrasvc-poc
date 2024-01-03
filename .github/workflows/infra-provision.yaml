@@ -15,6 +15,13 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v3
 
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: "ASIA6K5E6KETUECO4W3Y"
+          aws-secret-access-key: "3QGHnRSSVcqkZ89tFU+F7XA1XrzwwYwnLtDgd21x"
+          aws-session-token: "IQoJb3JpZ2luX2VjEMj//////////wEaCXVzLWVhc3QtMSJHMEUCIQCrbdKt+7LbC14ahguaUe1hqFyL3ClsrigGNfoOPZd0rQIgCtpG4aEmjvM/tHUetgAH6nhUvYkaVnpOAFwVV4VpNQYqqQMIYBAAGgw5ODU1MDQwNDMzMDMiDO4KqqIAb48i8EwDKSqGA2fDpWtMc7D42RFiZildbvEgXUxlQx4XPemc+LAT5tBxQY3YBt4qXFJgXd2Z1TLbArI4wE/k74SN/Z5nC9aBmGcNR3wZZbL+uUOO/QkdH8a17vskU8k5yr2ibIkXIlBNuOWaLhmCsB2qG0MdqO/gK13iLrTiLRdlc/BH/yORyRPS2ZH/SMOYU0BespjfVn2nMavdEO6tuz8gFXsixT9/OLzg10ITHjsokhcBUHuONoJCSDnVTyN9fxNWkWDnRSe8xj38PMvBMQ8qP2kFBV3LxiQNAp3XEvjGHv6GQuVfsavA3lulCRfalLjwxdm87Wo+AesnBp0Rc5gz9bnKsa8dKHUGSO0+vaedd6RIlH3nfdpDo1lRTFeSH43mjlHKbrwoK2gPfx0pzOFD8Ttb61rMK2gLj/uHvFj4t7RyD/Gyay11Vxxx+b9nDw1WkS3eIKSzN1EN0eld+IQ38JRpHKk2av+zZqT9GcEchoM95+opp5ehieRY9Q+jog+BvqAN+RJY/pb0fNKWDTCU8tWsBjqmAdUtf6BZOzI4Rtbz3YExlXEM6qShX2bbBOi2OQChF9SuWNN9e51pCI/d+LpGi8I/Gp5Z2VK5nS0cjZFOoWMl4YZW0eux0L+4El77ET3AxxjsH24p8NbS5ek2QSCsOpIv7A8bwUxKoyagE5JoNfCC41nz09y6ksL2rW2ldgRLG3iznj8krEo3YEqDVZfgoPy8njB6A129ywi4jVV0Xx/iOxkRwv3icH8="
+          aws-region: us-east-1
       # Install the latest version of Terragrunt CLI and configure the Terragrunt CLI configuration file with a Terragrunt Cloud user API token
       - name: Setup Terraform v1.2.6
         uses: hashicorp/setup-Terraform@v1

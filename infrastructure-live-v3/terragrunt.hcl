@@ -6,7 +6,6 @@ remote_state {
   }
 
   config = {
-    role_arn = "arn:aws:iam::985504043303:role/infra-svc-poc-role" 
     bucket = "infraservice-skyu-poc"
     key = "${path_relative_to_include()}/terraform.tfstate"
     region = "us-east-1"
