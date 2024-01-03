@@ -7,7 +7,7 @@ remote_state {
 
     config = {
        profile = ""
-       role_arn = "" 
+       role_arn = "arn:aws:iam::985504043303:role/infra-svc-poc-role" 
        bucket = ""
 
     key = "${path_relative_to_include()}/terraform.tfstate"
