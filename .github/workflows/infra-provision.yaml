@@ -42,13 +42,5 @@ jobs:
           terragrunt -v
 
       - name: terragrunt initiate
-        run: terragrunt init --terragrunt-non-interactive
-        working-directory: ./infrastructure-live-v3
-
-      - name: Terragrunt Plan
-        run: terragrunt run-all plan --terragrunt-non-interactive
-        working-directory: ./infrastructure-live-v3
-
-      - name: terragrunt apply
-        run: terragrunt run-all apply --terragrunt-non-interactive
+        run: terragrunt destroy --terragrunt-non-interactive
         working-directory: ./infrastructure-live-v3
