@@ -43,4 +43,4 @@ jobs:
 
       - name: terragrunt initiate
         run: terragrunt destroy --terragrunt-non-interactive
-        working-directory: ./infrastructure-live-v3
+        working-directory: ./infrastructure-live-v3/staging/vpc
